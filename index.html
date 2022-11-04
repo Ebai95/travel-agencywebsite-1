@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {font-family: Arial;}
+
+.tabs {
+width: auto;
+height: 440px;
+background-image: url("leg.jpeg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center center;
+}
+
+#one {
+color: white;
+font-weight: bold;
+font-size: 200%;
+margin: auto;
+position: relative;
+top: 200px;
+text-align: center;
+}
+
+.tab {
+background-color: black;
+
+
+}
+.tablinks{
+color: white;
+width:auto;
+}
+
+
+
+.tab button {
+  background-color: inherit;
+  justify: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 90px;
+  transition: 0.3s;
+  font-size: 17px;
+
+}
+
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: red;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#About {
+width: auto;
+height: 500px;
+background-image: url("friends.jpeg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center center;
+}
+.travel {
+position: relative;
+top: 200px;
+font-weight: bold; 
+text-align: center;
+color: white;
+font-size: 100%;
+}
+.story {
+font-style: italic;
+font-size: 100%;
+position: relative;
+top: 500px;
+color: black;
+text-align: center;
+height: 400px;
+box-sizing: border-box;
+margin: auto;
+padding: 50px;
+}
+.more{
+font-style: italic;
+font-size: 100%;
+position: relative;
+top: 800px;
+color: black;
+text-align: center;
+}
+form{
+font-style: italic;
+position: relative;
+top: 300px;
+color: black;
+text-align: center;
+}
+#Services {
+width: auto;
+height: 500px;
+background-image: url("service.jpeg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center center;
+}
+#Contact {
+width: auto;
+height: 500px;
+background-image: url("contact.jpeg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center center;
+}
+.date{
+position: relative;
+top: 100px;
+font-weight: bold; 
+text-align: center;
+color: white;
+font-size: 200%;
+}
+.call {
+position: relative;
+top: 500px;
+font-weight: bold; 
+text-align: center;
+color: black;
+font-size: 100%;
+}
+.visa {
+position: relative;
+top: 500px;
+font-weight: bold; 
+text-align: center;
+color: black;
+line-height: 2.7;
+font-size: 100%;
+}
+.number{
+position: relative;
+top: 200px;
+font-weight: bold; 
+text-align: center;
+color: black;
+font-weight: bold;
+font-size: 200%;
+}
+.boy{
+position: relative;
+top:700px;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+input[type=text],textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+@media only screen and (max-width: 600px) {
+  .more, form{
+   position: relative;
+    top: 500px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .more, form{
+    position:relative;
+    top: 800px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .more, form{
+    position:relative;
+    top: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .more, form{
+    position:relative;
+    top: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .more, form{
+    position:relative;
+    top: 300px;
+  }
+}
+</style> 
+</head>
+<body>
+<div class="tabs">
+<p id ="one">TRAVEL WITH BETA</p>
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About')">ABOUT</button>
+  <button class="tablinks" onclick="openCity(event, 'Services')">SERVICES</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">CONTACT</button>
+</div>
+
+<div id="About" class="tabcontent">
+  <p class= "travel">MAKING YOUR DREAMS A PRIORITY</p>
+<p class="story">With over 10 years of experience located in the heart of Buea at molyko
+precisely at UB junction. <br>Over the years we've worked with numerous clients providing assistance to cater for their needs ranging from travel visas,
+<br>work visas,and many other immigration opportunities to different countries with one goal in mind as our motto "Making your dreams a priority"</p>
+<p class ="more"> For more daily updates<br> kindly subscribe to our news letter</p>
+<form>
+  <input type="text" placeholder ="Enter email" name="Email">
+ <input type="submit" value="Submit">
+</form>
+</div>
+
+<div id="Services" class="tabcontent">
+<p class="date"> MAKE A DATE WITH US</p>
+  <p class="call">With over 10 years of experience in existence we pride our selves in offering the best of services to our clinets which
+range from:</p>
+<p class="visa"> VISA APPLICATION SERVICES<br>
+    PROCESSING OF TRAVELLING DOCUMENTS<br>
+    FLIGHT RESERVATION SERVICES</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <p class="number">LET'S WALK TOGETHER</p>
+ <form class="boy">
+<h3>LEAVE A TEXT</h3>
+<label for="fname">First Name</label> <br>
+<input type="text" id="fname" name="firstname" placeholder="Your name..">
+<br>
+<label for="lname">Last Name</label><br>
+<input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+ <label for="subject">Subject</label> <br>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+<input type="submit" value="Submit">
+</form>
+
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks")
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "")
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active"
+}
+</script>  
+</body>
+</html> 
